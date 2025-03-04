@@ -1,0 +1,18 @@
+#spring:
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    client-id: admin
+#    producer:
+#      group-id: broker
+#  application:
+#    name: producer
+server:
+  port: 8081
+spring:
+  application:
+    name: producer
+  kafka:
+    consumer:
+      group-id: group-1
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
